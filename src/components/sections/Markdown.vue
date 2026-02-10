@@ -14,3 +14,15 @@ import page from '../mds/md.mdx';
 
   </div>
 </template>
+
+<style scoped>
+/* mdx 渲染区域内的图片：去掉边框/阴影，和文本区域等宽 */
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: none;
+  box-shadow: none;
+}
+</style>

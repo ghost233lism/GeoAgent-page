@@ -46,16 +46,16 @@ export default {
   <Video/>
   <Abstract/>
   <Markdown/>
-  <Latex/>
-  <Table/>
-  <Collapse/>
-  <Echart/>
+  <!-- <Latex/> -->
+  <!-- <Table/> -->
+  <!-- <Collapse/>
+  <Echart/> -->
   <!-- <Model3D/> -->
   <!-- <GaussianSplats3D/> -->
-  <SeletionForComparison/>
+  <!-- <SeletionForComparison/>
   <ImageSliderInner/>
   <ImageSlider/>
-  <ImageSelector/>
+  <ImageSelector/> -->
   <BibTeX/>
   <!-- <Comment/> -->
 </template>

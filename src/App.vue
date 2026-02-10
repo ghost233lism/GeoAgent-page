@@ -108,8 +108,8 @@ a:hover {
 
 p > img {
   /* 图片与正文区域等宽、无任何边框/阴影效果 */
-  width: 100%;
-  max-width: 100%;
+  width: 95%;
+  max-width: 95%;
   display: block;
   margin: 0 auto;
   border-radius: 0;

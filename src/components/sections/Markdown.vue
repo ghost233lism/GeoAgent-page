@@ -19,8 +19,8 @@ import page from '../mds/md.mdx';
 /* mdx 渲染区域内的图片：去掉边框/阴影，和文本区域等宽 */
 img {
   display: block;
-  width: 100%;
-  max-width: 100%;
+  width: 95%;
+  max-width: 95%;
   height: auto;
   border: none;
   box-shadow: none;

@@ -13,13 +13,13 @@ const links = {
   
   <div class="bg">
     
-    <el-watermark :content="['GeoAgent', 'Modi Jin', 'HVISION@NKU']" :gap="['60','0']" :z-index="0">
+    <el-watermark :content="['GeoAgent', 'Modi Jin', 'Hvision@NKU']" :gap="['60','0']" :z-index="0">
       <el-row justify="center">
         <p class="footer">
           GeoAgent: Learning to Geolocate Everywhere with Reinforced Geographic Characteristic.<br/>
 
           Project page of <a :href="links.GeoAgent">GeoAgent</a> by 
-          <a :href="links.HVision">HVISION Lab @ NKU</a>.<br/>
+          <a :href="links.HVision">Hvision @ NKU</a>.<br/>
 
           Powered by 
           <a :href="links.Vue">Vue</a>, 

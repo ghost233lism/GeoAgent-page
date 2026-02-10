@@ -4,16 +4,16 @@ import { ElIcon } from 'element-plus'
 import { Document, Files, MagicStick, Picture, DataAnalysis, Film } from '@element-plus/icons-vue'
 
 // logo地址，没有则置为""即可
-const logo = './logo.png'
+const logo = './icon.png'
 
 // 标题
-const title = 'Academic Project Page Template'
+const title = 'GeoAgent: Learning to Geolocate Everywhere with Reinforced Geographic Characteristic'
 
 // 标题颜色
 const title_color = '#000000'
 
 // 标题补充，没有则置为''即可
-const title_supp = ' (Vue based)'
+const title_supp = ''
 
 // 标题补充颜色
 const title_supp_color = '#42B883'
@@ -24,22 +24,40 @@ const btn_color = '#444444'
 // 作者清单（包含作者姓名、头像、主页、地址序号）
 const authors = [
   {
-    name: "Your Name",
-    icon: "./icon/junyaohu.jpg",
-    homepage: "https://junyaohu.github.io/",
-    address_flag: "1,#"
+    name: "Modi Jin",
+    // icon: "./icon/junyaohu.jpg",
+    homepage: "https://ghost233lism.github.io",
+    address_flag: "1"
   },
   {
-    name: "Anya Forger",
-    icon: "./icon/anya.jpg",
-    homepage: "https://www.bilibili.com/video/BV1jv4y1P7Bb",
-    address_flag: "2,#"
+    name: "Yiming Zhang",
+    // icon: "./icon/anya.jpg",
+    homepage: "https://zhang-yi-ming.github.io/",
+    address_flag: "1"
   },
   {
-    name: "BugCat Capoo",
-    icon: "./icon/capoo.webp",
-    homepage: "https://zh.moegirl.org.cn/%E7%8C%AB%E7%8C%AB%E8%99%AB%E5%92%96%E6%B3%A2",
-    address_flag: "1,*"
+    name: "Boyuan Sun",
+    // icon: "./icon/capoo.webp",
+    homepage: "https://bbbbchan.github.io/",
+    address_flag: "1"
+  },
+  {
+    name: "Dingwen Zhang",
+    // icon: "./icon/capoo.webp",
+    homepage: "https://zdw-nwpu.github.io/dingwenz.github.com/",
+    address_flag: "2"
+  },
+  {
+    name: "MingMing Cheng",
+    // icon: "./icon/capoo.webp",
+    homepage: "https://mmcheng.net/",
+    address_flag: "1"
+  },
+  {
+    name: "Qibin Hou",
+    // icon: "./icon/capoo.webp",
+    homepage: "https://houqb.github.io/",
+    address_flag: "1,†"
   },
 ]
 
@@ -47,32 +65,32 @@ const authors = [
 const addresses = [
   {
     address_flag: "1",
-    name: "Home University",
-    icon: "./icon/home.png",
-    homepage: "https://github.com/hmuniversity"
+    name: "VCIP, School of Computer Science, Nankai University",
+    // icon: "./icon/home.png",
+    // homepage: "https://github.com/hmuniversity"
   },
   {
     address_flag: "2",
-    name: "IKUN University",
-    icon: "./icon/ikun.avif",
-    homepage: "https://www.bilibili.com/video/BV178411Y7QB"
+    name: "School of Automation, Northwestern Polytechnical University",
+    // icon: "./icon/ikun.avif",
+    // homepage: "https://www.bilibili.com/video/BV178411Y7QB"
   },
 ]
 
 // 共一和通讯提示
 const con_and_corresponding_author = 
-  "#: Equal Contribution. *: Corresponding Author."
+  "†: Corresponding Author."
 
 // 最新消息
-const news = "🔥 [2024-12-15] This template project is still under development."
+// const news = "🔥 [2024-12-15] This template project is still under development."
 
 // 强调内容
-const emphases = [
-  "🎉 [ABCD 2024] Poster",
-  "🥰 欢迎关注“减论”微信公众号/B站/知乎/小红书",
-  "传递人工智能算法科普教育的减约理解",
-  "提升信息效率及认知维度"
-]
+// const emphases = [
+//   "🎉 [ABCD 2024] Poster",
+//   "🥰 欢迎关注“减论”微信公众号/B站/知乎/小红书",
+//   "传递人工智能算法科普教育的减约理解",
+//   "提升信息效率及认知维度"
+// ]
 
 // 提供引导资料链接
 const buttons = [
@@ -89,13 +107,13 @@ const buttons = [
   {
     disabled: false,
     name: "Code",
-    link: "https://github.com/JunyaoHu/academic-project-page-template-vue",
+    link: "https://github.com/HVision-NKU/GeoAgent",
     component: Files,
   },
   {
-    disabled: false,
+    disabled: true,
     name: "Demo",
-    link: "https://junyaohu.github.io/academic-project-page-template-vue",
+    // link: "https://junyaohu.github.io/academic-project-page-template-vue",
     component: MagicStick,
   },
   {
@@ -108,16 +126,16 @@ const buttons = [
     name: "Slide",
     component: DataAnalysis,
   },
+  // {
+  //   disabled: true,
+  //   name: "Video (减论)",
+  //   // link: "https://www.bilibili.com/video/BV15XkgYiE73/",
+  //   component: Film,
+  // },
   {
     disabled: false,
-    name: "Video (减论)",
-    link: "https://www.bilibili.com/video/BV15XkgYiE73/",
-    component: Film,
-  },
-  {
-    disabled: false,
-    name: "Video (Tutorial)",
-    link: "https://www.bilibili.com/video/BV1oUrfYzEqZ",
+    name: "Video",
+    // link: "https://www.bilibili.com/video/BV1oUrfYzEqZ",
     component: Film,
   },
 ]
@@ -128,11 +146,11 @@ const buttons = [
   <div>
 
     <!-- 最新消息提示 -->
-    <el-row justify="center">
+    <!-- <el-row justify="center">
       <el-col :span="24">
         <el-alert title="🔥 This template is still under development." type="success" />
       </el-col>
-    </el-row>
+    </el-row> -->
 
     <!-- 文章logo -->
     <el-row v-if="logo" justify="center">

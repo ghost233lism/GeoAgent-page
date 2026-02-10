@@ -6,6 +6,7 @@ const links = {
     Vue: "https://cn.vuejs.org/",
     Vite: "https://cn.vitejs.dev/",
     ElementPlus: "https://element-plus.org/zh-CN/",
+    TemplateContributor: "https://github.com/JunyaoHu/academic-project-page-template-vue",
 }
 </script>
 
@@ -24,7 +25,9 @@ const links = {
           Powered by 
           <a :href="links.Vue">Vue</a>, 
           <a :href="links.Vite">Vite</a>, and
-          <a :href="links.ElementPlus">Element Plus</a>.
+          <a :href="links.ElementPlus">Element Plus</a>.<br/>
+
+          Special thanks to the <a :href="links.TemplateContributor">template contributor</a>.
         </p>
       </el-row>
     </el-watermark>

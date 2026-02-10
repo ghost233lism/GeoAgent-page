@@ -3,8 +3,8 @@
 // 右侧更多菜单（可以在这里按需继续添加）
 const more_paper = {
     GeoAgent: {
-        name: "GeoAgent GitHub",
-        link: "https://github.com/HVision-NKU/GeoAgent",
+        name: "DepthAnything-AC Arxiv 2025",
+        link: "https://ghost233lism.github.io/depthanything-AC-page/",
     },
 }
 

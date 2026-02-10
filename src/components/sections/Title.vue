@@ -6,8 +6,8 @@ import { Document, Files, MagicStick, Picture, DataAnalysis, Film } from '@eleme
 // logo地址，没有则置为""即可
 const logo = './icon.png'
 
-// 标题
-const title = 'GeoAgent: Learning to Geolocate Everywhere with Reinforced Geographic Characteristic'
+// 标题（在 with 前换行）
+const title = 'GeoAgent: Learning to Geolocate Everywhere\nwith Reinforced Geographic Characteristic'
 
 // 标题颜色
 const title_color = '#000000'
@@ -181,14 +181,12 @@ const buttons = [
 
     <!-- 地址名单 -->
     <el-row justify="center">
-      <a :href=address.homepage v-for="address in addresses">
-        <el-button class="title-button" type="primary" text>
+      <div v-for="address in addresses" class="address-item">
           <el-avatar v-if="address.icon" :size="40" :src="address.icon" />
           <span class="address">
             <sup v-if="address.address_flag" class="address_sup">{{ address.address_flag }}</sup>{{ address.name }}
           </span>
-        </el-button>
-      </a>
+      </div>
     </el-row>
 
     <!-- 共一和通讯提示内容 -->
@@ -231,6 +229,11 @@ const buttons = [
   text-align: center;
 }
 
+/* 标题内部按换行符断行 */
+.paper-title span {
+  white-space: pre-line;
+}
+
 /* 姓名和地址按钮 */
 .title-button {
   margin: 10px 3px;
@@ -262,6 +265,14 @@ const buttons = [
 /* 地址属性 */
 .address {
   font-size: 18px;
+  color: inherit;
+}
+
+/* 地址项：普通文本，不使用按钮悬浮效果 */
+.address-item {
+  margin: 10px 3px;
+  display: inline-flex;
+  align-items: center;
 }
 
 /* 地址上标属性 */

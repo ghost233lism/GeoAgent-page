@@ -3,9 +3,17 @@
 The render result of `md.mdx` is here.
 
 
-![](./pipeline3.pdf)
+![](./pipeline3.png)
 
-## Good (H2)
+**Data construction and training pipeline of GeoAgent.** GeoSeek-CoT contains 10k high-quality reasoning processes labeled by geography experts and geolocation game players. 
+  GeoSeek-Loc includes 20k images for the cold start **of GeoAgent-SFT. Dur**ing the GRPO-based training, based on **GeoAgent-SFT**, we design the geo-similarity reward to encourage the model to converge towards correct answers both physically and semantically. 
+  Also, the consistency reward is introduced to keep the integrity and consistency of CoT.
+
+# GeoSeek Dataset
+
+![](./teaser.png)
+
+**GeoSeek Dataset. **We train GeoAgent with GeoSeek, a geolocation dataset with bias-reducing sampling and a val-bench annotated with locatability and geographic elements. Remarkably, a single image may contain multiple geographic elements.
 
 ### Nice (H3)
 

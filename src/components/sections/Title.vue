@@ -123,7 +123,7 @@ const buttons = [
   },
   {
     disabled: true,
-    name: "Slide",
+    name: "Dataset (GeoSeek)",
     component: DataAnalysis,
   },
   // {

@@ -2,13 +2,13 @@
 
 import Header from './components/Header.vue'
 import Main from './components/Main.vue'
-// import Footer from './components/Footer.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   components: {
     Header,
     Main,
-    // Footer,
+    Footer,
   }
 }
 
@@ -20,7 +20,7 @@ export default {
       <el-container>
         <el-header><Header/></el-header>
         <el-main><Main/></el-main>
-        <!-- <el-footer><Footer/></el-footer> -->
+        <el-footer><Footer/></el-footer>
       </el-container>
       
       <!-- 回到顶部 -->
@@ -107,11 +107,14 @@ a:hover {
 }
 
 p > img {
-  width: 80%;
+  /* 图片与正文区域等宽、无任何边框/阴影效果 */
+  width: 100%;
+  max-width: 100%;
   display: block;
   margin: 0 auto;
-  border-radius: 10px;
-  box-shadow: 1px 1px 4px 1px #afafaf;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
 }
 
 table {

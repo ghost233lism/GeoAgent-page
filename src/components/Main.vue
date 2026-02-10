@@ -50,8 +50,8 @@ export default {
   <Table/>
   <Collapse/>
   <Echart/>
-  <Model3D/>
-  <GaussianSplats3D/>
+  <!-- <Model3D/> -->
+  <!-- <GaussianSplats3D/> -->
   <SeletionForComparison/>
   <ImageSliderInner/>
   <ImageSlider/>

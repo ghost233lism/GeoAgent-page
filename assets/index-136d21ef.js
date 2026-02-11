@@ -71,7 +71,7 @@ Experimental results show that GeoAgent outperforms existing methods and a serie
 `,Pt(e.p,{children:"本文提出 GeoAgent，一个能够紧密贴合人类推理并得出细粒度地址结论的模型。尽管基于强化学习的方法在性能和可解释性上取得了突破，但仍存在对 AI 生成思维链数据的依赖及与地理特性冲突的训练策略等问题。为解决这些问题，我们首先引入 GeoSeek，一个由地理专家和专业玩家标注的新地理定位数据集。我们深入探索地理任务的内在特性，提出由一致性代理评估的地理相似度奖励和一致性奖励以辅助训练。这促使模型从地理学角度收敛到正确答案，同时确保推理过程的完整性和一致性。实验结果表明，GeoAgent 在多个粒度上优于现有方法和一系列通用 VLLM，且生成的推理与人类高度一致。"})]})}function _Oe(n={}){const{wrapper:e}=n.components||{};return e?Pt(e,{...n,children:Pt(_z,{...n})}):_z(n)}const SOe={__name:"Abstract",setup(n){const{locale:e}=Iu(),t=U(()=>e.value==="zh"?_Oe:bOe);return(r,i)=>{const a=Lt("el-divider"),s=Lt("el-col"),o=Lt("el-row");return $(),ge("div",null,[pe(a),pe(o,{justify:"center"},{default:Me(()=>[pe(s,{xs:24,sm:20,md:16,lg:12,xl:12},{default:Me(()=>[($(),rt(Rn(t.value)))]),_:1})]),_:1})])}}};function Sz(n){const e={a:"a",h1:"h1",h3:"h3",img:"img",li:"li",p:"p",strong:"strong",ul:"ul",...n.components};return Pt(Bt,{children:[Pt(e.h1,{children:"Framework"}),`
 `,Pt(e.p,{children:Pt(e.img,{src:"./pipeline3.png",alt:""})}),`
 `,Pt(e.p,{children:[Pt(e.strong,{children:"Data construction and training pipeline of GeoAgent."}),` GeoSeek-CoT contains 10k high-quality reasoning processes labeled by geography experts and geolocation game players.
-GeoSeek-Loc includes 20k images for the cold start `,Pt(e.strong,{children:"of GeoAgent-SFT. Dur"}),"ing the GRPO-based training, based on ",Pt(e.strong,{children:"GeoAgent-SFT"}),`, we design the geo-similarity reward to encourage the model to converge towards correct answers both physically and semantically.
+GeoSeek-Loc includes 20k images for the cold start `,Pt(e.strong,{children:"of GeoAgent-SFT."})," During the GRPO-based training, based on ",Pt(e.strong,{children:"GeoAgent-SFT"}),`, we design the geo-similarity reward to encourage the model to converge towards correct answers both physically and semantically.
 Also, the consistency reward is introduced to keep the integrity and consistency of CoT.`]}),`
 `,Pt(e.h1,{children:"GeoSeek Dataset"}),`
 `,Pt(e.p,{children:Pt(e.img,{src:"./teaser.png",alt:""})}),`
@@ -118,7 +118,7 @@ for their outstanding contributions in providing high-quality reasoning process 
 `,Pt(e.h3,{children:"For commercial licensing, please contact: andrewhoux[AT]gmail.com"}),`
 `]})}function wOe(n={}){const{wrapper:e}=n.components||{};return e?Pt(e,{...n,children:Pt(Sz,{...n})}):Sz(n)}function wz(n){const e={a:"a",h1:"h1",h3:"h3",img:"img",li:"li",p:"p",strong:"strong",ul:"ul",...n.components};return Pt(Bt,{children:[Pt(e.h1,{children:"框架"}),`
 `,Pt(e.p,{children:Pt(e.img,{src:"./pipeline3.png",alt:""})}),`
-`,Pt(e.p,{children:[Pt(e.strong,{children:"GeoAgent 的数据构建与训练流程。"})," GeoSeek-CoT 包含 1 万条由地理专家和地理定位游戏玩家标注的高质量推理过程。GeoSeek-Loc 包含 2 万张图像，用于 GeoAgent-SFT 的冷启动。在基于 GRPO 的训练中，我们在 GeoAgent-SFT 的基础上设计了地理相似度奖励，促使模型在物理和语义上收敛到正确答案。同时引入一致性奖励，以保持思维链的完整性和一致性。"]}),`
+`,Pt(e.p,{children:[Pt(e.strong,{children:"GeoAgent 的数据构建与训练流程。"})," GeoSeek-CoT 包含 1 万条由地理专家和地理定位游戏玩家标注的高质量推理过程。GeoSeek-Loc 包含 2 万张图像，用于 ",Pt(e.strong,{children:"GeoAgent-SFT"})," 的冷启动。在基于 GRPO 的训练中，我们在 ",Pt(e.strong,{children:"GeoAgent-SFT"})," 的基础上设计了地理相似度奖励，促使模型在物理和语义上收敛到正确答案。同时引入一致性奖励，以保持思维链的完整性和一致性。"]}),`
 `,Pt(e.h1,{children:"GeoSeek 数据集"}),`
 `,Pt(e.p,{children:Pt(e.img,{src:"./teaser.png",alt:""})}),`
 `,Pt(e.p,{children:[Pt(e.strong,{children:"GeoSeek 数据集。"})," 我们使用 GeoSeek 训练 GeoAgent，这是一个采用偏差减少采样、并带有可定位性和地理元素标注验证集的地理定位数据集。值得注意的是，单张图像可能包含多种地理元素。"]}),`

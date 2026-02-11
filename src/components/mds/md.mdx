@@ -12,6 +12,9 @@
 
 **GeoSeek Dataset.** We train GeoAgent with GeoSeek, a geolocation dataset with bias-reducing sampling and a val-bench annotated with locatability and geographic elements. Remarkably, a single image may contain multiple geographic elements.
 
+![](./data.png)
+
+GeoSeek consists of three parts: GeoSeek-CoT, GeoSeek-Loc, and GeoSeek-Val. GeoSeek-CoT contains 10K high-quality reasoning processes labeled by humans, used for SFT. GeoSeek-Loc contains 20K samples with fine-grained address annotations, used for GRPO. GeoSeek-Val serves as a benchmark for evaluating geolocation models, with each image labeled for locatability and the geographic clues available for localization.
 
 # Comparison
 
@@ -53,32 +56,23 @@ for their outstanding contributions in providing high-quality reasoning process 
 
 # License
 
-<div style={{
-  backgroundColor: '#e3f2fd',
-  padding: '24px',
-  borderRadius: '12px',
-  display: 'flex',
-  alignItems: 'flex-start',
-  gap: '20px',
-  flexWrap: 'wrap'
-}}>
-  <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', flexShrink: 0 }}>
-    <div style={{ width: '48px', height: '48px', borderRadius: '50%', background: '#00a86b', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '10px', boxSizing: 'border-box' }}>
-      <img src="https://creativecommons.org/images/deed/cc_icon_white.svg" alt="CC" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+<div class="license-content">
+  <div class="license-container">
+    <div class="license-icon">
+      <i class="fab fa-creative-commons"></i>
+      <i class="fab fa-creative-commons-by"></i>
+      <i class="fab fa-creative-commons-nc"></i>
     </div>
-    <div style={{ width: '48px', height: '48px', borderRadius: '50%', background: '#00a86b', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '10px', boxSizing: 'border-box' }}>
-      <img src="https://creativecommons.org/images/deed/attribution_icon_white.svg" alt="Attribution" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+    <div class="license-text">
+      <h3 data-en="Creative Commons Attribution-NonCommercial 4.0 International" data-zh="知识共享署名-非商业性使用 4.0 国际许可协议">Creative Commons Attribution-NonCommercial 4.0 International</h3>
+      <p data-en="This code is licensed under the Creative Commons Attribution-NonCommercial 4.0 International for non-commercial use only. Please note that any commercial use of this code requires formal permission prior to use." data-zh="此代码根据知识共享署名-非商业性使用 4.0 国际许可协议授权，仅供非商业用途使用。请注意，任何商业用途都需要事先获得正式许可。">This code is licensed under the Creative Commons Attribution-NonCommercial 4.0 International for non-commercial use only. Please note that any commercial use of this code requires formal permission prior to use.</p>
+      <div class="license-actions">
+        <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer" class="license-btn">
+          <i class="fas fa-external-link-alt"></i>
+          <span data-en="View License" data-zh="查看许可证">View License</span>
+        </a>
+      </div>
     </div>
-    <div style={{ width: '48px', height: '48px', borderRadius: '50%', background: '#00a86b', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '10px', boxSizing: 'border-box' }}>
-      <img src="https://creativecommons.org/images/deed/nc_white.svg" alt="Non-Commercial" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-    </div>
-  </div>
-  <div style={{ flex: '1', minWidth: '200px' }}>
-    <p style={{ margin: '0 0 8px 0', fontWeight: 'bold' }}>Creative Commons Attribution-NonCommercial 4.0 International</p>
-    <p style={{ margin: 0, lineHeight: 1.6 }}>This code is licensed under the Creative Commons Attribution-NonCommercial 4.0 International for non-commercial use only. Please note that any commercial use of this code requires formal permission prior to use.</p>
-    <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer" style={{
-      display: 'inline-flex', alignItems: 'center', gap: '8px', marginTop: '16px', padding: '10px 20px', backgroundColor: '#00a86b', color: 'white', borderRadius: '24px', textDecoration: 'none', fontWeight: 'bold', boxShadow: '0 2px 4px rgba(0,0,0,0.15)'
-    }}>↗ View License</a>
   </div>
 </div>
 

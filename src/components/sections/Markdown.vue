@@ -26,3 +26,103 @@ img {
   box-shadow: none;
 }
 </style>
+
+<style>
+/* License 区块样式（参考 mds/style.css） */
+.license-content {
+  max-width: 900px;
+  margin: 1.5rem auto;
+}
+
+.license-container {
+  background: #e3f2fd;
+  border: 1px solid rgba(46, 204, 113, 0.2);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.license-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 2.5rem;
+  color: #2ecc71;
+  flex-shrink: 0;
+}
+
+.license-icon i {
+  display: block;
+}
+
+.license-text {
+  flex: 1;
+}
+
+.license-text h3 {
+  color: #1a1a2e;
+  font-size: 1.4rem;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+}
+
+.license-text p {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 0 0 1.5rem 0;
+  text-align: justify;
+}
+
+.license-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.license-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+}
+
+.license-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(46, 204, 113, 0.4);
+  background: linear-gradient(135deg, #27ae60, #229954);
+}
+
+@media (max-width: 768px) {
+  .license-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+
+  .license-icon {
+    font-size: 2rem;
+  }
+
+  .license-text h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .license-text p {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
+</style>

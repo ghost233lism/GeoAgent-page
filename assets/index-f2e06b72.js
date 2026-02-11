@@ -57,7 +57,7 @@ Also, the consistency reward is introduced to keep the integrity and consistency
 `,_n(e.h1,{children:"GeoSeek Dataset"}),`
 `,_n(e.p,{children:_n(e.img,{src:"./teaser.png",alt:""})}),`
 `,_n(e.p,{children:[_n(e.strong,{children:"GeoSeek Dataset."})," We train GeoAgent with GeoSeek, a geolocation dataset with bias-reducing sampling and a val-bench annotated with locatability and geographic elements. Remarkably, a single image may contain multiple geographic elements."]}),`
-`,_n("img",{src:"./data.png",style:{display:"block",width:"80%",maxWidth:"80%",margin:"0 auto"}}),`
+`,_n(e.p,{children:_n(e.img,{src:"./data.png",alt:""})}),`
 `,_n(e.p,{children:"GeoSeek consists of three parts: GeoSeek-CoT, GeoSeek-Loc, and GeoSeek-Val. GeoSeek-CoT contains 10K high-quality reasoning processes labeled by humans, used for SFT. GeoSeek-Loc contains 20K samples with fine-grained address annotations, used for GRPO. GeoSeek-Val serves as a benchmark for evaluating geolocation models, with each image labeled for locatability and the geographic clues available for localization."}),`
 `,_n(e.h1,{children:"Comparison"}),`
 `,_n(e.p,{children:_n(e.img,{src:"./ccase.png",alt:""})}),`

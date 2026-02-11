@@ -20,10 +20,10 @@ export default {
       ],
       // 选择要轮播的照片
       image_paths: [
-        "./carousel/1.jpg",
-        "./carousel/2.jpg",
-        "./carousel/3.jpg",
-        "./carousel/4.jpg",
+        "./carousel/1.png",
+        "./carousel/2.png",
+        "./carousel/3.png",
+        "./carousel/4.png",
         "./carousel/5.jpg",
         "./carousel/6.jpg",
       ],

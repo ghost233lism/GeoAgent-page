@@ -24,8 +24,8 @@ export default {
         "./carousel/2.png",
         "./carousel/3.png",
         "./carousel/4.png",
-        "./carousel/5.jpg",
-        "./carousel/6.jpg",
+        "./carousel/5.png",
+        // "./carousel/6.jpg",
       ],
     }
   }

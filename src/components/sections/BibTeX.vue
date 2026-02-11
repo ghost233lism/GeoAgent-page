@@ -1,32 +1,6 @@
-<script>
-// 暂时注释掉 BibTeX 数据与复制逻辑，仅显示 Coming soon
-// export default {
-//   data() {
-//     return {
-//       bibtex: [
-//         "Coming Soon",
-//         "    title={Academic Project Page Template Vue},",
-//         "    author={Hu, Junyao},",
-//         "    journal={GitHub},",
-//         "    year={2023}",
-//         "}",
-//       ],
-//     }
-//   },
-//   methods: {
-//     copyVal() {
-//       let oInput = document.createElement('textarea');
-//       let text = document.getElementById('bibtex').innerText;
-//       oInput.value = text;
-//       document.body.appendChild(oInput);
-//       oInput.select();
-//       document.execCommand('Copy');
-//       this.$message.success('Copy Successfully');
-//       oInput.remove();
-//     }
-//   }
-// }
-export default {}
+<script setup>
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 </script>
 
 <template>
@@ -34,11 +8,11 @@ export default {}
     <el-divider />
 
     <el-row justify="center">
-      <h1 class="section-title">BibTeX</h1>
+      <h1 class="section-title">{{ t('bibtex') }}</h1>
     </el-row>
 
     <el-row justify="center" style="margin-top: 20px;">
-      <h2>Coming soon...</h2>
+      <h2>{{ t('comingSoon') }}</h2>
     </el-row>
 
     <!-- 暂未上线，先显示占位文案；恢复时取消下方注释并恢复上方 script 中的 data/methods -->

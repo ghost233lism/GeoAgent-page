@@ -1,7 +1,9 @@
 <script lang="ts" setup>
-
+import { useI18n } from 'vue-i18n'
 import { ElIcon } from 'element-plus'
 import { Document, Files, MagicStick, Picture, DataAnalysis, Film } from '@element-plus/icons-vue'
+
+const { t } = useI18n()
 
 // logo地址，没有则置为""即可
 const logo = './icon.png'
@@ -61,25 +63,13 @@ const authors = [
   },
 ]
 
-// 地址清单（包含地址名称、头像、主页、地址序号）
+// 地址清单（nameKey 对应 i18n 的 key）
 const addresses = [
-  {
-    address_flag: "1",
-    name: "VCIP, School of Computer Science, Nankai University",
-    // icon: "./icon/home.png",
-    // homepage: "https://github.com/hmuniversity"
-  },
-  {
-    address_flag: "2",
-    name: "School of Automation, Northwestern Polytechnical University",
-    // icon: "./icon/ikun.avif",
-    // homepage: "https://www.bilibili.com/video/BV178411Y7QB"
-  },
+  { address_flag: "1", nameKey: "address1" },
+  { address_flag: "2", nameKey: "address2" },
 ]
 
-// 共一和通讯提示
-const con_and_corresponding_author = 
-  "†: Corresponding Author."
+// 共一和通讯提示（使用 i18n）
 
 // 最新消息
 // const news = "🔥 [2024-12-15] This template project is still under development."
@@ -92,52 +82,15 @@ const con_and_corresponding_author =
 //   "提升信息效率及认知维度"
 // ]
 
-// 提供引导资料链接
+// 提供引导资料链接（nameKey 对应 i18n）
 const buttons = [
-  {
-    disabled: true,
-    name: "Paper",
-    component: Document,
-  },
-  {
-    disabled: true,
-    name: "中译版",
-    component: Document,
-  },
-  {
-    disabled: false,
-    name: "Code",
-    link: "https://github.com/HVision-NKU/GeoAgent",
-    component: Files,
-  },
-  {
-    disabled: true,
-    name: "Demo",
-    // link: "https://junyaohu.github.io/academic-project-page-template-vue",
-    component: MagicStick,
-  },
-  {
-    disabled: true,
-    name: "Poster",
-    component: Picture,
-  },
-  {
-    disabled: true,
-    name: "Dataset (GeoSeek)",
-    component: DataAnalysis,
-  },
-  // {
-  //   disabled: true,
-  //   name: "Video (减论)",
-  //   // link: "https://www.bilibili.com/video/BV15XkgYiE73/",
-  //   component: Film,
-  // },
-  {
-    disabled: false,
-    name: "Video",
-    // link: "https://www.bilibili.com/video/BV1oUrfYzEqZ",
-    component: Film,
-  },
+  { disabled: true, nameKey: "paper", component: Document },
+  { disabled: true, nameKey: "chineseVersion", component: Document },
+  { disabled: false, nameKey: "code", link: "https://github.com/HVision-NKU/GeoAgent", component: Files },
+  { disabled: true, nameKey: "demo", component: MagicStick },
+  { disabled: true, nameKey: "poster", component: Picture },
+  { disabled: true, nameKey: "dataset", component: DataAnalysis },
+  { disabled: false, nameKey: "video", component: Film },
 ]
 
 </script>
@@ -184,19 +137,14 @@ const buttons = [
       <div v-for="address in addresses" class="address-item">
           <el-avatar v-if="address.icon" :size="40" :src="address.icon" />
           <span class="address">
-            <sup v-if="address.address_flag" class="address_sup">{{ address.address_flag }}</sup>{{ address.name }}
+            <sup v-if="address.address_flag" class="address_sup">{{ address.address_flag }}</sup>{{ t(address.nameKey) }}
           </span>
       </div>
     </el-row>
 
     <!-- 共一和通讯提示内容 -->
     <el-row justify="center" class="con-cor">
-        {{ con_and_corresponding_author }}
-    </el-row>
-
-    <!-- 强调内容 -->
-    <el-row justify="center" class="emphasis" v-for="emphasis in emphases">
-        {{ emphasis }}
+        {{ t('correspondingAuthor') }}
     </el-row>
 
     <!-- 提供引导按钮 -->
@@ -208,7 +156,7 @@ const buttons = [
               <el-icon :size="18">
                 <component :is="button.component" />
               </el-icon>
-              <span class="btn-text">{{ button.name }}</span>
+              <span class="btn-text">{{ t(button.nameKey) }}</span>
             </el-button>
           </a>
         </el-row>

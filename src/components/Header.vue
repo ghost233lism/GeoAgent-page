@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n'
+
+const { t, locale } = useI18n()
 
 // 右侧更多菜单（可以在这里按需继续添加）
 const more_paper = {
@@ -8,6 +11,9 @@ const more_paper = {
     },
 }
 
+function setLocale(lang: string) {
+  locale.value = lang
+}
 </script>
 
 <template>
@@ -23,7 +29,7 @@ const more_paper = {
     >
         <!-- 更多栏目 -->
         <el-sub-menu index="2">
-            <template #title>More</template>
+            <template #title>{{ t('more') }}</template>
             <el-menu-item
               v-for="(item, key, idx) in more_paper"
               :key="key"
@@ -32,6 +38,14 @@ const more_paper = {
                 <a :href="item.link">{{ item.name }}</a>
             </el-menu-item>
         </el-sub-menu>
+        <!-- 语言切换 -->
+        <el-menu-item index="lang" class="lang-menu-item">
+          <div class="lang-switcher" @click.stop>
+            <button :class="{ active: locale === 'en' }" @click="setLocale('en')">EN</button>
+            <span class="lang-sep">|</span>
+            <button :class="{ active: locale === 'zh' }" @click="setLocale('zh')">中文</button>
+          </div>
+        </el-menu-item>
 
     </el-menu>
     </el-affix>
@@ -68,6 +82,39 @@ const more_paper = {
 /* 水平导航高度 */
 .el-menu--horizontal {
     --el-menu-horizontal-height: 50px;
+}
+
+/* 语言切换 */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-right: 1rem;
+}
+.lang-switcher button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #666;
+  padding: 0.2rem 0.4rem;
+}
+.lang-switcher button:hover {
+  color: #333;
+}
+.lang-switcher button.active {
+  color: #3273dc;
+  font-weight: 600;
+}
+.lang-sep {
+  color: #ccc;
+  font-size: 12px;
+}
+.lang-menu-item {
+  margin-left: auto;
+}
+.lang-menu-item:hover {
+  background: transparent !important;
 }
 
 /* 取消鼠标焦点悬浮在链接上的颜色装饰 */

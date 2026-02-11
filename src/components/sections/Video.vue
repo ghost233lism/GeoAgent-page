@@ -1,4 +1,6 @@
 <script setup>
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 </script>
 
 <template>
@@ -6,14 +8,12 @@
     <el-divider />
 
     <el-row justify="center">
-      <h1 class="section-title">Explainer Video</h1>
+      <h1 class="section-title">{{ t('explainerVideo') }}</h1>
     </el-row>
-
-    <!-- 每个网站的视频的iframe可能不一致，最好在这里手动调整 -->
 
     <!-- 暂未上线，先显示占位文案 -->
     <el-row justify="center" style="margin-top: 20px;">
-      <h2>Coming soon...</h2>
+      <h2>{{ t('comingSoon') }}</h2>
     </el-row>
 
     <!--

@@ -1,5 +1,11 @@
 <script setup>
-import page from '../mds/md.mdx';
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+import pageEn from '../mds/md.mdx'
+import pageZh from '../mds/md.zh.mdx'
+
+const { locale } = useI18n()
+const page = computed(() => locale.value === 'zh' ? pageZh : pageEn)
 </script>
 
 <template>
@@ -8,7 +14,7 @@ import page from '../mds/md.mdx';
 
     <el-row justify="center">
         <el-col :xs="24" :sm="20" :md="16" :lg="12" :xl="12">
-            <page />
+            <component :is="page" />
         </el-col>
     </el-row>
 

@@ -1,0 +1,81 @@
+# 框架
+
+![](./pipeline3.png)
+
+**GeoAgent 的数据构建与训练流程。** GeoSeek-CoT 包含 1 万条由地理专家和地理定位游戏玩家标注的高质量推理过程。GeoSeek-Loc 包含 2 万张图像，用于 GeoAgent-SFT 的冷启动。在基于 GRPO 的训练中，我们在 GeoAgent-SFT 的基础上设计了地理相似度奖励，促使模型在物理和语义上收敛到正确答案。同时引入一致性奖励，以保持思维链的完整性和一致性。
+
+# GeoSeek 数据集
+
+![](./teaser.png)
+
+**GeoSeek 数据集。** 我们使用 GeoSeek 训练 GeoAgent，这是一个采用偏差减少采样、并带有可定位性和地理元素标注验证集的地理定位数据集。值得注意的是，单张图像可能包含多种地理元素。
+
+<img src="./data.png" style={{ display: "block", width: "80%", maxWidth: "80%", margin: "0 auto" }} />
+
+GeoSeek 由三部分组成：GeoSeek-CoT、GeoSeek-Loc 和 GeoSeek-Val。GeoSeek-CoT 包含 1 万条由人工标注的高质量推理过程，用于 SFT。GeoSeek-Loc 包含 2 万条带有细粒度地址标注的样本，用于 GRPO。GeoSeek-Val 作为评估地理定位模型的基准，每张图像标注了可定位性及可用于定位的地理线索。
+
+# 对比
+
+![](./ccase.png)
+
+**六种不同模型（GPT-5、Gemma3、Kimi、Qwen2.5-VL-32B、GeoAgent、仅 SFT 的 GeoAgent）的推理对比。**
+
+- **绿色**：正确推理
+- **黄色**：存在一定问题的推理
+- **红色**：严重偏离的推理
+- **棕色**：推理过程**不完整**或与结果**不一致**的情况
+
+# 致谢
+
+我们衷心感谢
+[Yue Zhang](https://tuxun.fun/)、
+[Mu He](https://space.bilibili.com/1655209518?spm_id_from=333.337.0.0)、
+[Haowen He](https://space.bilibili.com/111714204?spm_id_from=333.337.0.0)、
+[Jie Lin](https://space.bilibili.com/93569847?spm_id_from=333.337.0.0)、
+以及地理学领域的其他专家和优秀地理定位游戏玩家，
+感谢他们在 GeoSeek 数据集构建过程中提供的宝贵指导、提示词设计建议和数据支持。
+
+我们还要感谢
+[Zhixiang Wang](https://tuxun.fun/)、
+[Chilin Chen](https://tuxun.fun/)、
+[Jincheng Shi](https://tuxun.fun/)、
+[Liupeng Zhang](https://tuxun.fun/)、
+[Yuan Gu](https://tuxun.fun/)、
+[Yanghang Shao](https://tuxun.fun/)、
+[Jinhua Zhang](https://tuxun.fun/)、
+[Jiachen Zhu](https://tuxun.fun/)、
+[Gucheng Qiuyue](https://tuxun.fun/)、
+[Qingyang Guo](https://tuxun.fun/)、
+[Jingchen Yang](https://tuxun.fun/)、
+[Weilong Kong](https://tuxun.fun/)、
+[Xinyuan Li](https://tuxun.fun/)、
+以及[Mr. Xu](https://tuxun.fun/)（匿名志愿者）
+在提供高质量推理过程数据方面的杰出贡献。
+
+# 许可证
+
+<div class="license-content">
+  <div class="license-container">
+    <div class="license-icon">
+      <i class="fab fa-creative-commons"></i>
+      <i class="fab fa-creative-commons-by"></i>
+      <i class="fab fa-creative-commons-nc"></i>
+    </div>
+    <div class="license-text">
+      <h3>知识共享署名-非商业性使用 4.0 国际许可协议</h3>
+      <p>此代码根据知识共享署名-非商业性使用 4.0 国际许可协议授权，仅供非商业用途使用。请注意，任何商业用途都需要事先获得正式许可。</p>
+      <div class="license-actions">
+        <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer" class="license-btn">
+          <i class="fas fa-external-link-alt"></i>
+          <span>查看许可证</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+# 联系我们
+
+### 欢迎联系我们：jin_modi[AT]mail.nankai.edu.cn
+
+### 商业许可请联系：andrewhoux[AT]gmail.com

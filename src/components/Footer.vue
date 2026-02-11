@@ -1,5 +1,8 @@
 <script lang="ts" setup>
-// 页脚需要的链接（与 GeoAgent 项目相关）
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
 const links = {
     GeoAgent: "https://github.com/HVision-NKU/GeoAgent",
     HVision: "https://github.com/HVision-NKU",
@@ -11,23 +14,21 @@ const links = {
 </script>
 
 <template>
-  
   <div class="bg">
-    
     <el-watermark :content="['GeoAgent', 'Modi Jin', 'Hvision@NKU']" :gap="['60','0']" :z-index="0">
       <el-row justify="center">
         <p class="footer">
-          GeoAgent: Learning to Geolocate Everywhere with Reinforced Geographic Characteristic.<br/>
+          {{ t('footerDesc') }}<br/>
 
-          Project page of <a :href="links.GeoAgent">GeoAgent</a> by 
+          {{ t('projectPage') }} <a :href="links.GeoAgent">GeoAgent</a> {{ t('by') }}
           <a :href="links.HVision">Hvision @ NKU</a>.<br/>
 
-          Powered by 
-          <a :href="links.Vue">Vue</a>, 
-          <a :href="links.Vite">Vite</a>, and
+          {{ t('poweredBy') }}
+          <a :href="links.Vue">Vue</a>,
+          <a :href="links.Vite">Vite</a>,
           <a :href="links.ElementPlus">Element Plus</a>.<br/>
 
-          Special thanks to the <a :href="links.TemplateContributor">template contributor</a>.
+          {{ t('templateThanks') }} <a :href="links.TemplateContributor">{{ t('templateThanksLink') }}</a>.
         </p>
       </el-row>
     </el-watermark>

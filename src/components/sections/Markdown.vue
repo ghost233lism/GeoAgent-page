@@ -28,18 +28,18 @@ img {
 </style>
 
 <style>
-/* License 区块样式（参考 mds/style.css） */
+/* License 区块样式（与正文等宽、无背景） */
 .license-content {
-  max-width: 900px;
-  margin: 1.5rem auto;
+  width: 100%;
+  margin: 1.5rem 0;
 }
 
 .license-container {
-  background: #e3f2fd;
-  border: 1px solid rgba(46, 204, 113, 0.2);
-  border-radius: 20px;
-  padding: 3rem;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -107,7 +107,6 @@ img {
   .license-container {
     flex-direction: column;
     text-align: center;
-    padding: 2rem;
     gap: 1.5rem;
   }
 

@@ -109,7 +109,7 @@ for their valuable guidance, prompt design suggestions, and data support through
 `,Pt(e.a,{href:"https://tuxun.fun/",children:"Jingchen Yang"}),`,
 `,Pt(e.a,{href:"https://tuxun.fun/",children:"Weilong Kong"}),`,
 `,Pt(e.a,{href:"https://tuxun.fun/",children:"Xinyuan Li"}),`,
-and `,Pt(e.a,{href:"https://tuxun.fun/",children:"Mr. Xu"}),` (an anonymous volunteer)
+and `,Pt(e.a,{href:"https://tuxun.fun/",children:"Dawei Xu"}),`
 for their outstanding contributions in providing high-quality reasoning process data.`]}),`
 `,Pt(e.h1,{children:"License"}),`
 `,Pt("div",{class:"license-content",children:Pt("div",{class:"license-container",children:[Pt("div",{class:"license-icon",children:[Pt("i",{class:"fab fa-creative-commons"}),Pt("i",{class:"fab fa-creative-commons-by"}),Pt("i",{class:"fab fa-creative-commons-nc"})]}),Pt("div",{class:"license-text",children:[Pt("h3",{"data-en":"Creative Commons Attribution-NonCommercial 4.0 International","data-zh":"知识共享署名-非商业性使用 4.0 国际许可协议",children:"Creative Commons Attribution-NonCommercial 4.0 International"}),Pt("p",{"data-en":"This code is licensed under the Creative Commons Attribution-NonCommercial 4.0 International for non-commercial use only. Please note that any commercial use of this code requires formal permission prior to use.","data-zh":"此代码根据知识共享署名-非商业性使用 4.0 国际许可协议授权，仅供非商业用途使用。请注意，任何商业用途都需要事先获得正式许可。",children:"This code is licensed under the Creative Commons Attribution-NonCommercial 4.0 International for non-commercial use only. Please note that any commercial use of this code requires formal permission prior to use."}),Pt("div",{class:"license-actions",children:Pt("a",{href:"https://creativecommons.org/licenses/by-nc/4.0/",target:"_blank",rel:"noopener noreferrer",class:"license-btn",children:[Pt("i",{class:"fas fa-external-link-alt"}),Pt("span",{"data-en":"View License","data-zh":"查看许可证",children:"View License"})]})})]})]})}),`
@@ -155,7 +155,7 @@ for their outstanding contributions in providing high-quality reasoning process 
 `,Pt(e.a,{href:"https://tuxun.fun/",children:"Jingchen Yang"}),`、
 `,Pt(e.a,{href:"https://tuxun.fun/",children:"Weilong Kong"}),`、
 `,Pt(e.a,{href:"https://tuxun.fun/",children:"Xinyuan Li"}),`、
-以及`,Pt(e.a,{href:"https://tuxun.fun/",children:"Mr. Xu"}),`（匿名志愿者）
+以及`,Pt(e.a,{href:"https://tuxun.fun/",children:"Dawei Xu"}),`
 在提供高质量推理过程数据方面的杰出贡献。`]}),`
 `,Pt(e.h1,{children:"许可证"}),`
 `,Pt("div",{class:"license-content",children:Pt("div",{class:"license-container",children:[Pt("div",{class:"license-icon",children:[Pt("i",{class:"fab fa-creative-commons"}),Pt("i",{class:"fab fa-creative-commons-by"}),Pt("i",{class:"fab fa-creative-commons-nc"})]}),Pt("div",{class:"license-text",children:[Pt("h3",{children:"知识共享署名-非商业性使用 4.0 国际许可协议"}),Pt("p",{children:"此代码根据知识共享署名-非商业性使用 4.0 国际许可协议授权，仅供非商业用途使用。请注意，任何商业用途都需要事先获得正式许可。"}),Pt("div",{class:"license-actions",children:Pt("a",{href:"https://creativecommons.org/licenses/by-nc/4.0/",target:"_blank",rel:"noopener noreferrer",class:"license-btn",children:[Pt("i",{class:"fas fa-external-link-alt"}),Pt("span",{children:"查看许可证"})]})})]})]})}),`

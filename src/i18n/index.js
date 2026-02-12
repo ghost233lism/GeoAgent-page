@@ -44,7 +44,7 @@ const messages = {
     bibtex: 'BibTeX',
     address1: '南开大学计算机学院 VCIP',
     address2: '西北工业大学自动化学院',
-    footerDesc: 'GeoAgent：基于强化地理特征的全场景地理定位。',
+    footerDesc: 'GeoAgent: Learning to Geolocate Everywhere with Reinforced Geographic Characteristic.',
     projectPage: '项目主页',
     by: '来自',
     poweredBy: '技术栈',

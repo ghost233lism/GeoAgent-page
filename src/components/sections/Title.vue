@@ -87,10 +87,10 @@ const buttons = [
   { disabled: true, nameKey: "paper", component: Document },
   { disabled: true, nameKey: "chineseVersion", component: Document },
   { disabled: false, nameKey: "code", link: "https://github.com/HVision-NKU/GeoAgent", component: Files },
-  { disabled: true, nameKey: "demo", component: MagicStick },
+  { disabled: false, nameKey: "demo", link: "https://huggingface.co/spaces/ghost233lism/GeoAgent", component: MagicStick },
   { disabled: true, nameKey: "poster", component: Picture },
-  { disabled: true, nameKey: "dataset", component: DataAnalysis },
-  { disabled: false, nameKey: "video", component: Film },
+  { disabled: false, nameKey: "dataset", link: "https://huggingface.co/datasets/HVision-NKU/GeoSeek", component: DataAnalysis },
+  { disabled: true, nameKey: "video", component: Film },
 ]
 
 </script>

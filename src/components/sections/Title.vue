@@ -89,7 +89,7 @@ const buttons = [
   { disabled: false, nameKey: "code", link: "https://github.com/HVision-NKU/GeoAgent", component: Files },
   { disabled: false, nameKey: "demo", link: "https://huggingface.co/spaces/ghost233lism/GeoAgent", component: MagicStick },
   { disabled: true, nameKey: "poster", component: Picture },
-  { disabled: false, nameKey: "dataset", link: "https://huggingface.co/datasets/HVision-NKU/GeoSeek", component: DataAnalysis },
+  { disabled: false, nameKey: "dataset", link: "https://huggingface.co/datasets/ghost233lism/GeoSeek", component: DataAnalysis },
   { disabled: true, nameKey: "video", component: Film },
 ]
 

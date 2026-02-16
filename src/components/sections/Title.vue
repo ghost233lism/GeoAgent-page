@@ -84,7 +84,7 @@ const addresses = [
 
 // 提供引导资料链接（nameKey 对应 i18n）
 const buttons = [
-  { disabled: true, nameKey: "paper", component: Document },
+  { disabled: false, nameKey: "paper", link: "https://arxiv.org/abs/2602.12617", component: Document },
   { disabled: true, nameKey: "chineseVersion", component: Document },
   { disabled: false, nameKey: "code", link: "https://github.com/HVision-NKU/GeoAgent", component: Files },
   { disabled: false, nameKey: "demo", link: "https://huggingface.co/spaces/ghost233lism/GeoAgent", component: MagicStick },
